@@ -1,5 +1,6 @@
-QA CSharp Automation Code Challenge #2 (Navigation Menu class):
+﻿/*
 
+automation challenge 2 (Navigation Menu class):
 Write a class that will allow me to navigate the main pages on the site.
 
 Go to https://www.skiutah.com
@@ -10,7 +11,21 @@ Remember to make a VerifyNavigation method that will accept a string value of th
 not something that is static in your code.  This function should work regardless of how many items are in the main
 navigation menu and what the labels are for each page.
 
-The sample code stub is found in the WebPageTest.cs file.
+Listed below is the sample code stub for running this test.
 
+*/
 
-Refer to the Git_Procedure_Step_By_Step document, which contains detailed instructions for accessing code stubs and submitting completed work from/to GitHub.
+namespace Automation_Code_Challenge_2_CSharp
+{
+
+    public class WebPageTest
+    {
+        [Test]
+        public void TestLauncher()
+        {
+            // Verify PageTitle and Navigation
+            VerifyPageTitle(URL, Expected_Value);
+            VerifyNavigation(Menu_Name);
+        }
+    }
+}
